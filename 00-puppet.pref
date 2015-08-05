@@ -1,0 +1,3 @@
+Package: puppet puppet-common puppetmaster-passenger
+Pin: version 3.8*
+Pin-Priority: 501

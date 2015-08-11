@@ -16,7 +16,7 @@ Installation steps for Puppet Dashboard,
 1. Start MySQL Server,
    > /etc/init.d/mysql start
 
-2. Crete Databse "puppet" by login to mysql server. (Note : Puppet Dashboard data base configuration file -               
+2. Create Databse "puppet" by login to mysql server. (Note : Puppet Dashboard data base configuration file -               
    /opt/puppet-dashboard/config/database.yml)
 
 3. Move to the puppet-dashboard location,
@@ -32,5 +32,5 @@ Installation steps for Puppet Dashboard,
    > bundle exec rails server
 
 7. Access the puppet Dashboard,
-   http://<<server:ip>>:3000
+   http://<<server ip>>:3000
    

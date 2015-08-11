@@ -8,6 +8,7 @@ This image contains following S/W versions,
 ### Versions
 
 * Puppet Master Server 3.8.1
+* Puppet dashboard
 * Ruby 1.8.7
 * Bundler 1.1
 * MySQL 5.6 

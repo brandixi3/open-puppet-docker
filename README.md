@@ -44,5 +44,5 @@ Installation steps for Puppet Dashboard,
    > bundle exec rails server
 
 7. Access the puppet Dashboard,
-   http://<<server ip>>:3000
+   http://<<<server ip>>>:3000
    

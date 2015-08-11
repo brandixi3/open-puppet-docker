@@ -43,6 +43,6 @@ Installation steps for Puppet Dashboard,
 6. To start the Puppet Dashboard,
    > bundle exec rails server
 
-7. Access the puppet Dashboard,
+7. Access the puppet Dashboard using,
    http://server_ip:3000
    

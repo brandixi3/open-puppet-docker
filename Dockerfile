@@ -39,10 +39,8 @@ RUN chmod 777 /etc/apache2/sites-enabled/puppetmaster.conf
 
 # Set Pupper Certificates
 RUN rm -rf /var/lib/puppet/ssl &&\
-#    puppet master --verbose --no-daemonize &&\
-#    puppet cert list -all &&\
+    puppet master --verbose &&\
     touch /etc/puppet/manifests/site.pp
-#    service apache2 start && \
 
 EXPOSE 8041 443 61613 80 3000 3306
 
@@ -78,3 +76,12 @@ RUN cd /opt/puppet-dashboard/ &&\
     bundle install --deployment &&\
     echo "secret_token: '$(bundle exec rake secret)'" >> config/settings.yml 
 
+WORKDIR /opt/puppet-dashboard/
+
+RUN service mysql start &&\
+    mysql -u root -e "create database puppet" &&\
+    bundle exec rake db:setup &&\
+    mv /etc/bash.bashrc /etc/bash.bashrc.backup
+
+ADD bash.bashrc /etc/
+RUN chmod 644 /etc/bash.bashrc

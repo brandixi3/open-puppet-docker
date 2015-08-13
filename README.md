@@ -30,3 +30,5 @@ Listening on 0.0.0.0:3000, CTRL+C to stop"
    
   Now you can access Puppet dashboard using , http://server_ip:3000
    
+(Note : Puppet Dashboard - /opt/puppet-dashboard
+        Puppet Dashboard configuration - /opt/puppet-dashboard/config )

@@ -18,7 +18,7 @@ Installation Steps for Puppet Master Server.
 1. Start the Docker container as follows,
    > docker run -p 80:80 -p 8140:8140 -p 3000:3000 -p 3306:3306 -h Docker-PUPPET-01 -t -i brandixi3/open-puppet-docker  /bin/bash
 
-2. After the whole setup completed you'll get like following in the terminal,
+2. After the whole setup completed you'll get a terminal output as follows,
    
    "=> Booting Thin
 => Rails 3.2.21 application starting in development on http://0.0.0.0:3000

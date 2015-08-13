@@ -81,7 +81,10 @@ WORKDIR /opt/puppet-dashboard/
 RUN service mysql start &&\
     mysql -u root -e "create database puppet" &&\
     bundle exec rake db:setup &&\
-    mv /etc/bash.bashrc /etc/bash.bashrc.backup
+    mv /etc/bash.bashrc /etc/bash.bashrc.backup &&\
+    mv /etc/apache2/apache2.conf /etc/apache2/apache2.conf.backup
 
 ADD bash.bashrc /etc/
-RUN chmod 644 /etc/bash.bashrc
+ADD apache2.conf /etc/apache2/
+RUN chmod 644 /etc/bash.bashrc &&\
+    chmod 644 /etc/apache2/apache2.conf

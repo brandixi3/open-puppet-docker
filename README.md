@@ -30,5 +30,8 @@ Listening on 0.0.0.0:3000, CTRL+C to stop"
    
   Now you can access Puppet dashboard using , http://server_ip:3000
    
-(Note : Puppet Dashboard - /opt/puppet-dashboard
-        Puppet Dashboard configuration - /opt/puppet-dashboard/config )
+(Note : 
+            - Puppet Dashboard - /opt/puppet-dashboard 
+            - Puppet Dashboard configuration - /opt/puppet-dashboard/config
+            - To start the Puppet master server - /etc/init.d/apache2 start 
+            - To start the Puppet dashboard server go to the /opt/puppet-dashboard folder and execute - bundle exec rails server )
